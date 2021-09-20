@@ -17,7 +17,7 @@ class AdviceViewModel {
     func provideResponseFor(givenQuery: String) -> String {
         
         // Start an advice session
-        var currentSesion = Session(question: input)
+        var currentSesion = Session(question: givenQuery)
         // Use the static function right from the Magic8Ball type (no instance required!)
         currentSesion.response = Magic8Ball.getResponse()
 
